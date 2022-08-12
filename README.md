@@ -1,3 +1,14 @@
+# Gitmy
+Gitmy is github profile search app it shows nicer version of github profile.
+
+![183237255-6474f426-4961-472e-afb9-8ebcf27b1aac](https://user-images.githubusercontent.com/71165927/184266806-a849ad36-f2fd-4766-a2e5-3b13b55b1942.png)
+
+Built  with
+  - reactjs
+  - styled-components
+  - github-api
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
