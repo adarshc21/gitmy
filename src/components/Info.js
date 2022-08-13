@@ -16,6 +16,17 @@ export default function Info({ data }) {
     following,
   } = data;
 
+  function getJoinedDate() {
+    const sMonth = ["Jan", "Feb", "Mar", "Apr", "May", "June", "July", "Aug", "Sept", "Oct", "Nov", "Dec"];
+    const nDate = new Date(created_at);
+
+    const month = sMonth[nDate.getMonth()];
+    const date = nDate.getDate();
+    const year = nDate.getFullYear();
+
+    return `${month} ${date}, ${year}`;
+  }
+  
   return (
     <SInfo>
       <Link className="back-btn" to="/">
@@ -43,7 +54,7 @@ export default function Info({ data }) {
 
         <li>
           <span className="iconify" data-icon="uil:calender"></span>
-          <span className="text">joined {created_at.slice(0, 10)}</span>
+          <span className="text">joined {getJoinedDate()}</span>
         </li>
       </ul>
 
