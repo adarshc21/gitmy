@@ -18,7 +18,6 @@ export default function UserPage() {
       .then((response) => {
         setFound(true);
         setData(response.data);
-        console.log(response.data);
       })
       .catch((err) => {
         setNotFound(true);
